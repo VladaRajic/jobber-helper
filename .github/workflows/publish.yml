@@ -15,13 +15,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@vladacode'
+#          registry-url: 'https://npm.pkg.github.com'
+#          scope: '@vladacode'
       - run: npm install
       - run: npm run build
-#      - run: |
-#          echo @vladacode:https://npm.pkg.github.com/ > build/.npmrc
-#          echo '//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}' >> build/.npmrc
+      - run: |
+          echo @vladacode:https://npm.pkg.github.com/ > build/.npmrc
+          echo '//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}' >> build/.npmrc
       - run: npm publish --access public
         working-directory: ./build
         env:
