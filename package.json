@@ -22,7 +22,7 @@
   "author": "Vlada Rajic",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/VladaRajic/jobber-helper"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
@@ -39,7 +39,9 @@
   },
   "types": "./src/index.d.ts",
   "dependencies": {
+    "cloudinary": "^2.2.0",
     "express": "^4.19.2",
+    "mongoose": "^8.4.4",
     "typescipt": "^1.0.0"
   },
   "devDependencies": {
