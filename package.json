@@ -18,14 +18,14 @@
     "trailingComma": "es5"
   },
   "keywords": [],
-  "name": "@vladacode/jobber-helper",
+  "name": "@vladarajic/jobber-helper",
   "author": "Vlada Rajic",
   "repository": {
     "type": "git",
     "url": "git@github.com:VladaRajic/jobber-helper.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@vladacode"
+    "registry": "https://npm.pkg.github.com/@vladarajic"
   },
   "exports": {
     ".": {
